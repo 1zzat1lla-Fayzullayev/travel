@@ -125,7 +125,7 @@ const Navbar = () => {
                     className={`${location.pathname === "/programs" ? "active-link" : ""
                       }`}
                   >
-                    Programlar
+                    Destinasyonlar
                   </Link>
                 </li>
                 <li onClick={() => handleLinkClick("/about")}>
@@ -134,7 +134,7 @@ const Navbar = () => {
                     className={`${location.pathname === "/about" ? "active-link" : ""
                       }`}
                   >
-                    {getText("aboutUs")}
+                   Müracaat
                   </Link>
                 </li>
                 <li
@@ -147,7 +147,7 @@ const Navbar = () => {
                     className={`${location.pathname === "/" ? "active-link" : ""}`}
                     style={{ display: "flex", alignItems: "center", gap: "10px" }}
                   >
-                    {getText("services")}
+                   Gerçek Hikayeler 
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
