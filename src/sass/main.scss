@@ -1652,7 +1652,7 @@ body {
             display: flex;
             flex-direction: column;
             gap: 12px;
-            button {
+            .myBtn {
                 color: #fff;
                 font-family: Jost;
                 font-size: 24px;
@@ -1677,7 +1677,7 @@ body {
                 }
             }
             @media (max-width: 992px) {
-                button {
+                .myBtn {
                     padding: 10px 20px !important;
                 }
             }
@@ -1711,10 +1711,12 @@ body {
 }
 
 .about-texts {
+    .about_accordion_btn {
+        background-color: none !important;
+    }
     h2,
     h4 {
         font-size: 70px;
-        margin-bottom: 50px;
         @media (max-width: 1400px) {
             font-size: 60px;
         }
@@ -1729,7 +1731,9 @@ body {
         }
     }
     li {
-        font-size: 22px;
+        font-size: 20px;
+        padding: 5px;
+        list-style: inside;
         color: #666666;
         // margin-bottom: 20px;
         @media screen and (max-width: 768px) {
@@ -2026,6 +2030,38 @@ body {
             -webkit-line-clamp: 3;
             /* Limit to 3 lines */
             -webkit-box-orient: vertical;
+        }
+    }
+}
+
+.programs-container {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+    .program-card {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 16px;
+            color: #7f8c8d;
+            line-height: 1.6;
         }
     }
 }

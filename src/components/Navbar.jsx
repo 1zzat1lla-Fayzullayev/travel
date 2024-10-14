@@ -110,13 +110,22 @@ const Navbar = () => {
               className={`d-flex nav-menu-pc justify-content align-items-center`}
             >
               <ul className="nav-menu">
-                <li onClick={() => handleLinkClick("/")}>
+                {/* <li onClick={() => handleLinkClick("/")}>
                   <Link
                     to="/"
                     className={`${location.pathname === "/" ? "active-link" : ""
                       }`}
                   >
                     {getText("home")}
+                  </Link>
+                </li> */}
+                <li onClick={() => handleLinkClick("/programs")}>
+                  <Link
+                    to="/programs"
+                    className={`${location.pathname === "/programs" ? "active-link" : ""
+                      }`}
+                  >
+                    Programlar
                   </Link>
                 </li>
                 <li onClick={() => handleLinkClick("/about")}>
@@ -134,8 +143,8 @@ const Navbar = () => {
                   onMouseLeave={() => handleDropdownHover(false)}
                 >
                   <Link
-                    to="/services"
-                    className={`${location.pathname === "/services" ? "active-link" : ""}`}
+                   
+                    className={`${location.pathname === "/" ? "active-link" : ""}`}
                     style={{ display: "flex", alignItems: "center", gap: "10px" }}
                   >
                     {getText("services")}
@@ -184,7 +193,7 @@ const Navbar = () => {
                         {getText("headerSwiperTitle1")}
                       </Link>
                     </li>
-                    
+
                     {/* <li onClick={() => handleLinkClick("/expert-transfer")}>
                       <Link
                         to="/expert-transfer"

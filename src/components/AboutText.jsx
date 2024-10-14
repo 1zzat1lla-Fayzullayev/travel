@@ -1,83 +1,39 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { getText } from "../locales";
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Text } from "@chakra-ui/react";
 
 function AboutText() {
   return (
     <>
       <div className="about-texts">
-        <h2>EduAgency</h2>
+        <p><strong>Work & Travel</strong> programı, gençlere dünyanın farklı yerlerinde seyahat ederken çalışma ve uluslararası deneyim kazanma fırsatı sunan küresel bir girişimdir. Ana amacımız, uluslararası deneyim edinmek isteyen öğrenci ve gençlere destek olmak, onların dünya görüşlerini genişletmek ve farklı kültürlerle yakından tanışma imkanı yaratmaktır.</p>
 
-        <div>
-          <p>{getText("AboutPageTextP1")}</p>
+        <Accordion allowToggle>
+          <AccordionItem>
+            <h2>
+              <AccordionButton className="about_accordion_btn">
+                <Box
+                  as="span"
+                  flex="1"
+                  textAlign="left"
+                  style={{ color: "black", fontWeight: "600", fontSize: "24px", }}
+                >
+                  Neden bizi tercih etmelisiniz?
 
-          <p>{getText("AboutPageTextP2")}</p>
-
-          <p>{getText("AboutPageTextP3")}</p>
-
-          <p>{getText("AboutPageTextP4")}</p>
-        </div>
-
-        <h4 style={{fontSize: "1.85rem"}}>{getText("AboutPageTextUlFirst")}</h4>
-        <p>{getText("AboutPageTextUlDesc")}</p>
-
-        <h3>{getText("AboutPageTextUlHeading")}</h3>
-        <ul style={{ marginTop: "20px", padding: "0" }}>
-          <li>
-            <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
-              {getText("AboutPageTextUlp1")}{" "}
-              <img src="/img/check.png" alt="" style={{ width: "25px" }} />
-            </p>
-          </li>
-          <li>
-            <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
-              {getText("AboutPageTextUlp2")}{" "}
-              <img src="/img/check.png" alt="" style={{ width: "25px" }} />
-            </p>
-          </li>
-          <li>
-            <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
-              {getText("AboutPageTextUlp3")}{" "}
-              <img src="/img/check.png" alt="" style={{ width: "25px" }} />
-            </p>
-          </li>
-          <li>
-            <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
-              {getText("AboutPageTextUlp4")}{" "}
-              <img src="/img/check.png" alt="" style={{ width: "25px" }} />
-            </p>
-          </li>
-          <li>
-            <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
-              {getText("AboutPageTextUlp5")}{" "}
-              <img src="/img/check.png" alt="" style={{ width: "25px" }} />
-            </p>
-          </li>
-          <li>
-            <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
-              {getText("AboutPageTextUlp6")}{" "}
-              <img src="/img/check.png" alt="" style={{ width: "25px" }} />
-            </p>
-          </li>
-          <li>
-            <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
-              {getText("AboutPageTextUlp7")}{" "}
-              <img src="/img/check.png" alt="" style={{ width: "25px" }} />
-            </p>
-          </li>
-          <li>
-            <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
-              {getText("AboutPageTextUlp8")}{" "}
-              <img src="/img/check.png" alt="" style={{ width: "25px" }} />
-            </p>
-          </li>
-          <li>
-            <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
-              {getText("AboutPageTextUlp9")}{" "}
-              <img src="/img/check.png" alt="" style={{ width: "25px" }} />
-            </p>
-          </li>
-        </ul>
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel  color={"#666666"}>
+              <ul>
+                <li>Çalışma fırsatları: Amerika, Almanya ve diğer ülkelerde restoranlar, oteller, yaz kampları ve eğlence parkları gibi çeşitli alanlarda iş imkânları sunuyoruz.</li>
+                <li>Kültürel değişim: Work & Travel programıyla sadece çalışmakla kalmaz, aynı zamanda yeni arkadaşlar edinir ve diğer ülkelerin zengin kültürlerini yakından tanıma fırsatı bulursunuz. Bu deneyim, kişisel ve profesyonel gelişiminize büyük katkı sağlar.</li>
+                <li>Destek ve rehberlik: Vize sürecinden lojistik detaylara kadar her adımda size rehberlik ediyor, karşılaşabileceğiniz tüm zorluklarda yanınızda oluyoruz.</li>
+              </ul>
+            </AccordionPanel>
+          </AccordionItem>
+        </Accordion>
       </div>
     </>
   );
