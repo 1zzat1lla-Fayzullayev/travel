@@ -12,26 +12,15 @@ import "./sass/main.scss";
 import ScrollToTop from "./components/ScrollToTop.js";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Application from "./pages/Application.jsx";
 import StudentTransfer from "./pages/StudentTransfer.jsx";
-import ExpertTransfer from "./pages/ExpertTransfer.jsx";
-import AcademicTour from "./pages/AcademicTour.jsx";
-import UniversityCom from "./pages/UniversityCom.jsx";
 import Contacts from "./pages/Contacts.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
-import Services from "./components/Services.jsx";
-import ServicesLinksIn from "./pages/ServicesLinksIn.jsx";
 import { LanguageProvider } from "./context/LanguageContext.jsx";
 import Question from "./pages/Question.jsx";
-import TurkiyeDili from "./pages/AcademicTour.jsx";
-import OrganizatsionServices from "./pages/OrganizatsionServices.jsx";
-import TurkiyeBurslari from "./pages/TurkiyeBurslari.jsx";
-import OfficialRepresentativeServices from "./pages/OfficialRepresentativeServices.jsx";
-import EducationalTechnologies from "./pages/EducationalTechnologies.jsx";
-import OnlineCertificate from "./pages/OnlineCertificate.jsx";
-import LearningLeader from "./pages/LearningLeader.jsx";
 import WorkTravel from "./pages/WorkTravel.jsx";
-import Programs from "./pages/Programs.jsx";
+import TRStories from "./pages/TRStories.jsx";
+import Destinations from "./pages/Destinations.jsx";
+import ApplicationProcess from "./pages/ApplicationProcess.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -45,7 +34,9 @@ root.render(
           <Route path="/" exact element={<App />} />
           <Route path="/student-transfer" exact element={<StudentTransfer />} />
           <Route path="/work-and-travel" exact element={<WorkTravel />} />
-          <Route path="/programs" exact element={<Programs />} />
+          <Route path="/destinations" exact element={<Destinations />} />
+          <Route path="/true-stories" exact element={<TRStories />} />
+          <Route path="/application" exact element={<ApplicationProcess />} />
           {/* <Route path="/expert-transfer" exact element={<ExpertTransfer />} />
           <Route path="/turkiye-dili" exact element={<TurkiyeDili />} />
           <Route path="/educational-technologies" exact element={<EducationalTechnologies />} />
@@ -62,7 +53,6 @@ root.render(
           <Route path="/contacts" exact element={<Contacts />} />
           <Route path="/about" exact element={<AboutPage />} />
           {/* <Route path="/services" exact element={<Services />} /> */}
-          <Route path="/services/in" exact element={<ServicesLinksIn />} />
           <Route path="/question" exact element={<Question />} />
         </Routes>
         <Footer />

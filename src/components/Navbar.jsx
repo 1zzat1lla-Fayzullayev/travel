@@ -119,35 +119,45 @@ const Navbar = () => {
                     {getText("home")}
                   </Link>
                 </li> */}
-                <li onClick={() => handleLinkClick("/programs")}>
+                <li onClick={() => handleLinkClick("/destinations")}>
                   <Link
-                    to="/programs"
-                    className={`${location.pathname === "/programs" ? "active-link" : ""
+                    to="/destinations"
+                    className={`${location.pathname === "/destinations" ? "active-link" : ""
                       }`}
                   >
                     Destinasyonlar
                   </Link>
                 </li>
-                <li onClick={() => handleLinkClick("/about")}>
+                <li onClick={() => handleLinkClick("/application")}>
                   <Link
-                    to="/about"
-                    className={`${location.pathname === "/about" ? "active-link" : ""
+                    to="/application"
+                    className={`${location.pathname === "/application" ? "active-link" : ""
                       }`}
                   >
-                   Müracaat
+                    Başvuru 
                   </Link>
                 </li>
-                <li
+                <li onClick={() => handleLinkClick("/true-stories")}>
+                  <Link
+                    to="/true-stories"
+                    className={`${location.pathname === "/true-stories" ? "active-link" : ""
+                      }`}
+                  >
+                     Hikayeler
+                  </Link>
+                </li>
+
+
+                {/* <li
                   style={{ display: "flex", alignItems: "center" }}
                   onMouseEnter={() => handleDropdownHover(true)}
                   onMouseLeave={() => handleDropdownHover(false)}
                 >
                   <Link
-                   
+
                     className={`${location.pathname === "/" ? "active-link" : ""}`}
                     style={{ display: "flex", alignItems: "center", gap: "10px" }}
                   >
-                   Gerçek Hikayeler 
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -193,115 +203,8 @@ const Navbar = () => {
                         {getText("headerSwiperTitle1")}
                       </Link>
                     </li>
-
-                    {/* <li onClick={() => handleLinkClick("/expert-transfer")}>
-                      <Link
-                        to="/expert-transfer"
-                        className={`${location.pathname === "/expert-transfer"
-                          ? "active-link"
-                          : ""
-                          }`}
-                      >
-                        {getText("headerSwiperTitle3")}
-                      </Link>
-                    </li>
-                    <li onClick={() => handleLinkClick("/application")}>
-                      <Link
-                        to="/application"
-                        className={`${location.pathname === "/application"
-                          ? "active-link"
-                          : ""
-                          }`}
-                      >
-                        {getText("headerSwiperTitle1")}
-                      </Link>
-                    </li>
-
-                    <li onClick={() => handleLinkClick("/turkiye-dili")}>
-                      <Link
-                        to="/turkiye-dili"
-                        className={`${location.pathname === "/turkiye-dili"
-                          ? "active-link"
-                          : ""
-                          }`}
-                      >
-                        {getText("headerSwiperTitle5")}
-                      </Link>
-                    </li>
-                    <li onClick={() => handleLinkClick("/organization-services")}>
-                      <Link
-                        to="/organization-services"
-                        className={`${location.pathname === "/organization-services"
-                          ? "active-link"
-                          : ""
-                          }`}
-                      >
-                        {getText("headerSwiperTitle4")}
-
-                      </Link>
-                    </li>
-                    <li onClick={() => handleLinkClick("/turkiye-burslari")}>
-                      <Link
-                        to="/turkiye-burslari"
-                        className={`${location.pathname === "/turkiye-burslari"
-                          ? "active-link"
-                          : ""
-                          }`}
-                      >
-                        {getText("headerSwiperTitle6")}
-                      </Link>
-                    </li>
-                    <li onClick={() => handleLinkClick("/official-representative-services")}>
-                      <Link
-                        to="/official-representative-services"
-                        className={`${location.pathname === "/official-representative-services"
-                          ? "active-link"
-                          : ""
-                          }`}
-                      >
-                        {getText("headerSwiperTitle7")}
-                      </Link>
-                    </li>
-
-                    <li onClick={() => handleLinkClick("/educational-technologies")}>
-                      <Link
-                        to="/educational-technologies"
-                        className={`${location.pathname === "/educational-technologies"
-                          ? "active-link"
-                          : ""
-                          }`}
-                      >
-                        {getText("headerSwiperTitle8")}
-                      </Link>
-                    </li>
-                    <li onClick={() => handleLinkClick("/online-certificate")}>
-                      <Link
-                        to="/online-certificate"
-                        className={`${location.pathname === "/online-certificate"
-                          ? "active-link"
-                          : ""
-                          }`}
-                      >
-                        {getText("headerSwiperTitle9")}
-                      </Link>
-                    </li>
-
-                    <li onClick={() => handleLinkClick("/international-teacher")}>
-                      <Link
-                        to="/international-teacher"
-                        className={`${location.pathname === "/international-teacher"
-                          ? "active-link"
-                          : ""
-                          }`}
-                      >
-                        {getText("headerSwiperTitle10")}
-                      </Link>
-                    </li>
- */}
-
-
                   </motion.ul>
-                </li>
+                </li> */}
                 <li onClick={() => handleLinkClick("/question")}>
                   <Link
                     to="/question"

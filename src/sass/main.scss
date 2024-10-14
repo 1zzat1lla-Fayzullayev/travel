@@ -93,6 +93,8 @@ body {
             backdrop-filter: blur(10px);
             li {
                 position: relative;
+                // padding-top: 15px !important;
+                // padding-bottom: 15px !important;
                 .dropdown-menu {
                     position: absolute;
                     top: 100%;
@@ -237,7 +239,7 @@ body {
                 align-items: center;
                 background: rgba(255, 255, 255, 0.7);
                 border-radius: 114px;
-                padding: 17px !important;
+                padding: 32px !important;
                 margin-right: 32px;
                 li {
                     margin-left: 30px;
