@@ -89,7 +89,7 @@ function ApplicationProcess() {
 
             {/* Image Section */}
             <div>
-                <Image src={"https://files.oaiusercontent.com/file-XaaMH95W7rEqoDdNl2uMO53Y?se=2024-10-15T10%3A17%3A58Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3De0c65967-b679-48cc-b43a-f21bcfd55412.webp&sig=2061hNabVA/uavOmVnwgduCqhOv%2BdS2sdnmNRl%2BElBw%3D"} className="application-process_img" />
+                <Image src={"/img/Application.png"} className="application-process_img" />
             </div>
         </div>
     );

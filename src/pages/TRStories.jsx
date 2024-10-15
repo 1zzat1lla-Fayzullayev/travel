@@ -104,7 +104,7 @@ function TRStories() {
                 </Accordion>
             </div>
             <Image
-                src="https://etimg.etb2bimg.com/photo/98465947.cms"
+                src="/img/true.png"
                 className="tr_stories_img"
             />
         </div>

@@ -64,7 +64,7 @@ function Destinations() {
 
             {/* Image section */}
             <div>
-                <Image src={"https://turonworld.uz/files/imgonline-com-ua-Resize-9NfjgGbLcCo_335362xo.jpg"} className="destinations_img" />
+                {/* <Image src={"https://turonworld.uz/files/imgonline-com-ua-Resize-9NfjgGbLcCo_335362xo.jpg"} className="destinations_img" /> */}
             </div>
         </div>
     );
