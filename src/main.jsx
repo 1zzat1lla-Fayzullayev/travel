@@ -37,26 +37,11 @@ root.render(
           <Route path="/destinations" exact element={<Destinations />} />
           <Route path="/true-stories" exact element={<TRStories />} />
           <Route path="/application" exact element={<ApplicationProcess />} />
-          {/* <Route path="/expert-transfer" exact element={<ExpertTransfer />} />
-          <Route path="/turkiye-dili" exact element={<TurkiyeDili />} />
-          <Route path="/educational-technologies" exact element={<EducationalTechnologies />} />
-          <Route path="/organization-services" exact element={<OrganizatsionServices />} />
-          <Route path="/turkiye-burslari" exact element={<TurkiyeBurslari />} />
-          <Route path="/official-representative-services" exact element={<OfficialRepresentativeServices />} />
-          <Route path="/online-certificate" exact element={<OnlineCertificate />} />
-          <Route path="/international-teacher" exact element={<LearningLeader />} />
-          <Route
-            path="/university-community"
-            exact
-            element={<UniversityCom />}
-          /> */}
           <Route path="/contacts" exact element={<Contacts />} />
           <Route path="/about" exact element={<AboutPage />} />
-          {/* <Route path="/services" exact element={<Services />} /> */}
           <Route path="/question" exact element={<Question />} />
         </Routes>
         <Footer />
-        {/* <Up /> */}
       </HashRouter>
     </LanguageProvider>
   </ChakraProvider>

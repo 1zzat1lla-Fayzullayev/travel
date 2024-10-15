@@ -2067,3 +2067,67 @@ body {
         }
     }
 }
+
+.destinations {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    align-items: start;
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+    }
+}
+
+.destinations .destinations_img {
+    border-radius: 15px;
+    @media screen and (max-width: 992px) {
+        margin-top: 20px;
+    }
+}
+
+.application-process {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: row;
+    align-items: start;
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+    }
+}
+
+.application-process_img {
+    height: 500px;
+    border-radius: 15px;
+    @media screen and (max-width: 992px) {
+        margin-top: 20px;
+    }
+}
+
+.tr_stories {
+    width: 100%;
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: row;
+    align-items: start;
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+    }
+}
+
+.tr_stories_accordion {
+    width: 100%;
+}
+
+.tr_stories .tr_stories_img {
+    height: 500px;
+    border-radius: 15px;
+    @media screen and (max-width: 992px) {
+        margin-top: 20px;
+    }
+}

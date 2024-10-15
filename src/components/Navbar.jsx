@@ -9,7 +9,6 @@ const Navbar = () => {
     useContext(LanguageContext);
   const [navbar, setNavbar] = useState(false);
   const [burger, setBurger] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -46,9 +45,6 @@ const Navbar = () => {
     setBurger((prevBurger) => !prevBurger);
   };
 
-  const handleDropdownHover = (state) => {
-    setIsDropdownOpen(state);
-  };
 
   const navVariants = {
     hidden: { opacity: 0, x: "100%" },
@@ -110,22 +106,13 @@ const Navbar = () => {
               className={`d-flex nav-menu-pc justify-content align-items-center`}
             >
               <ul className="nav-menu">
-                {/* <li onClick={() => handleLinkClick("/")}>
-                  <Link
-                    to="/"
-                    className={`${location.pathname === "/" ? "active-link" : ""
-                      }`}
-                  >
-                    {getText("home")}
-                  </Link>
-                </li> */}
                 <li onClick={() => handleLinkClick("/destinations")}>
                   <Link
                     to="/destinations"
                     className={`${location.pathname === "/destinations" ? "active-link" : ""
                       }`}
                   >
-                    Destinasyonlar
+                    {getText("destinations")}
                   </Link>
                 </li>
                 <li onClick={() => handleLinkClick("/application")}>
@@ -134,7 +121,7 @@ const Navbar = () => {
                     className={`${location.pathname === "/application" ? "active-link" : ""
                       }`}
                   >
-                    Başvuru 
+                    {getText("application")}
                   </Link>
                 </li>
                 <li onClick={() => handleLinkClick("/true-stories")}>
@@ -143,68 +130,10 @@ const Navbar = () => {
                     className={`${location.pathname === "/true-stories" ? "active-link" : ""
                       }`}
                   >
-                     Hikayeler
+                    {getText("stories")}
                   </Link>
                 </li>
 
-
-                {/* <li
-                  style={{ display: "flex", alignItems: "center" }}
-                  onMouseEnter={() => handleDropdownHover(true)}
-                  onMouseLeave={() => handleDropdownHover(false)}
-                >
-                  <Link
-
-                    className={`${location.pathname === "/" ? "active-link" : ""}`}
-                    style={{ display: "flex", alignItems: "center", gap: "10px" }}
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512"
-                      className={`services-arrow ${location.pathname === "/services" ? "active" : ""}`}
-                      style={{ width: "20px" }}
-                    >
-                      <path
-                        fill="#000000"
-                        d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
-                      />
-                    </svg>
-                  </Link>
-
-                  <motion.ul
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{
-                      opacity: isDropdownOpen ? 1 : 0,
-                      y: isDropdownOpen ? 0 : -30,
-                    }}
-                    transition={{ duration: 0.3 }}
-                    className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}
-                  >
-                    <li onClick={() => handleLinkClick("/student-transfer")}>
-                      <Link
-                        to="/student-transfer"
-                        className={`${location.pathname === "/student-transfer"
-                          ? "active-link"
-                          : ""
-                          }`}
-                      >
-                        {getText("headerSwiperTitle2")}
-                      </Link>
-                    </li>
-
-                    <li onClick={() => handleLinkClick("/work-and-travel")}>
-                      <Link
-                        to="/work-and-travel"
-                        className={`${location.pathname === "/work-and-travel"
-                          ? "active-link"
-                          : ""
-                          }`}
-                      >
-                        {getText("headerSwiperTitle1")}
-                      </Link>
-                    </li>
-                  </motion.ul>
-                </li> */}
                 <li onClick={() => handleLinkClick("/question")}>
                   <Link
                     to="/question"
